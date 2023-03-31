@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+
+    *{
+      margin: 10;
+    }
+    /* Estilo para a barra de navegação */
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 100px, 100px;
+      background-image: linear-gradient(45deg,cyan,yellow);
+
+    }
+
+    /* Estilo para os links do menu */
+    #navbar a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Estilo para os links do menu quando o mouse está em cima */
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Estilo para o link ativo do menu */
+    #active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Estilo para o conteúdo da página abaixo da barra de navegação */
+    #content {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .navlist-right {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <div class="navlist-right">
+      <a href="cadastro.html">cadastro</a>
+      <a href="login.html">login</a>
+    </div>
+  </div>
+  <form>
+    <h2>Login</h2>
+    <label for="usuario"><b>Usuário</b></label>
+    <input type="text" placeholder="Digite seu usuário" name="username" required>
+
+    <label for="senha"><b>Senha</b></label>
+    <input type="password" placeholder="Digite sua senha" name="password" required>
+
+    <button type="submit">Entrar</button>
+    <label class="psw"><a href="nonepassword.html">Esqueceu a senha?</a></label>
+  </form>
+</body>
+
+</html>
