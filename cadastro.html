@@ -3,107 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <style>
-    /* Estilo para o formulário */
-    form {
-      border: 2px solid black;
-      padding: 20px;
-      width: 400px;
-      margin: auto;
-      margin-top: 50px;
-      border-radius: 10px;
-      background-color: #f2f2f2;
-    }
-
-    /* Estilo para os campos de entrada */
-    input[type=text],
-    input[type=email],
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    /* Estilo para o botão de cadastro */
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    /* Estilo para o cabeçalho do formulário */
-    h2 {
-      text-align: center;
-    }
-
-    * {
-      margin: 0;
-
-    }
-
-    /* Estilo para a barra de navegação */
-    #navbar {
-      overflow: hidden;
-      /*background-color: #333;*/
-      position: fixed;
-      top: start;
-      width: 100%;
-      padding: 100px, 100px;
-      background-image: linear-gradient(45deg, cyan, yellow);
-    }
-
-    /* Estilo para os links do menu */
-    #navbar a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    /* Estilo para os links do menu quando o mouse está em cima */
-    #navbar a:hover {
-      background-color: #ddd;
-    }
-
-    /* Estilo para o link ativo do menu */
-    #active {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    /* Estilo para o conteúdo da página abaixo da barra de navegação */
-    #content {
-      margin-top: 50px;
-      padding: 20px;
-    }
-
-    .navlist-right {
-      float: right;
-    }
-
-    .l {
-      padding-top: 100px;
-    }
-  </style>
+  <title>Menu com Navbar</title>
+  <link href="/layout/css/cadastro.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="navbar">
-    <a class="active" href="#">Home</a>
+    <a href="index.html">Home</a>
     <div class="navlist-right">
-      <a href="cadastro.html">cadastro</a>
+      <a class="active" href="cadastro.html">cadastro</a>
       <a href="login.html">login</a>
     </div>
   </div>
